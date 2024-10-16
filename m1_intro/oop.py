@@ -62,17 +62,28 @@ class Knight(Player):
 class Healer(Player):
     def __init__(self, name):
         self.name = name
+        self.bandages = 5
 
     def heal(self, player):
-        print(f"{self.name} is healing {player.name}")
+        if self.bandages > 0:
+            print(f"{self.name} is healing {player.name}")
+            self.bandages -= 1
+        else:
+            print(f"{self.name} is out of bandages!")
 
 
 jieni = Knight("jieni")
 reyansh = Healer("reyansh")
+
+reyansh.heal(jieni)
+reyansh.heal(jieni)
+reyansh.heal(jieni)
+reyansh.heal(jieni)
+reyansh.heal(jieni)
 reyansh.heal(jieni)
 
 
-# aside: F-strings
+# ASIDE: F-strings
 num_dogs = 5
 num_dogs_str = str(num_dogs)
 non_f_string = "There are " + num_dogs_str + " dogs"
