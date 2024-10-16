@@ -43,6 +43,7 @@ game.list_players()
 
 # INHERITANCE
 
+# parent class
 class Player:
     def __init__(self, name):
         self.name = name
@@ -51,6 +52,7 @@ class Player:
         print("You can't fight")
 
 
+# subclass
 class Knight(Player):
     def __init__(self, name):
         self.name = name
@@ -59,6 +61,7 @@ class Knight(Player):
         print("Slash!")
 
 
+# subclass
 class Healer(Player):
     def __init__(self, name):
         self.name = name
