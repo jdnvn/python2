@@ -16,3 +16,9 @@ Run this in your console, replacing `<package-name>` with one of the names above
 ```
 /bin/python3 -m pip install <package-name>
 ```
+
+if that doesn't work, try:
+
+```
+/bin/python3 -m pip3 install <package-name>
+```
