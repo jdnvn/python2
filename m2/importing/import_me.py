@@ -1,0 +1,1 @@
+some_cool_string = "hello world!"
