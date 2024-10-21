@@ -11,7 +11,7 @@
 
 ## How to install in CodeSandbox
 
-Run this in your console, replacing <package-name> with one of the names above:
+Run this in your console, replacing `<package-name>` with one of the names above:
 
 ```
 /bin/python3 -m pip install <package-name>
