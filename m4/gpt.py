@@ -1,17 +1,18 @@
 from openai import OpenAI
 
-client = OpenAI(
-    api_key=<api-key>
-)
+API_KEY="your api key"
 
+client = OpenAI(
+    api_key=API_KEY
+)
 
 chat_completion = client.chat.completions.create(
     messages=[
         {
             "role": "user",
-            "content": "Say this is a test",
+            "content": "What are mind goblins?",
         }
     ],
-    model="gpt-4o",
+    model="gpt-4o"
 )
-print(chat_completion)
+print(chat_completion.choices[0].message.content)
