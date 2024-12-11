@@ -6,11 +6,12 @@ client = OpenAI(
     api_key=API_KEY
 )
 
+question = "What is the capital of Massachusetts"
 chat_completion = client.chat.completions.create(
     messages=[
         {
             "role": "user",
-            "content": "What are mind goblins?",
+            "content": question
         }
     ],
     model="gpt-4o"
